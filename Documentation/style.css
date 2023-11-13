@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'MC'; /* Donnez un nom à votre police */
+    src: url('font/minecraft-webfont.woff') format('truetype'); /* Indiquez le chemin vers votre fichier de police */
+}
+
+* {
+    background-color: #1e1f26;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+}
+
+.container {
+    text-align: center; /* Centre le contenu à l'intérieur de la div parente */
+    /*background: linear-gradient(109.61deg,#4c4f5a 4.26%,#202125 84.84%);*/
+    margin: 0px 13vw;
+    border-radius: 10px;
+}
+
+.box {
+    display: inline-block; /* Permet aux divs d'être côte à côte */
+    margin: 3vw; /* Ajoute un espace de 10 pixels entre les divs */
+    left: 10vw;
+    right: 10vw;
+    width: 30vw; /* Définir la largeur des divs selon vos besoins */
+    height: 20vw; /* Définir la hauteur des divs selon vos besoins */
+    background: #1d1e22; /* Couleur de fond pour visualiser les divs */
+    border-radius: 10px;
+    box-shadow: 30px;
+    box-shadow: 0 4px 30px rgba(0,0,0,.5);
+}
+
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+}
+  .home {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 2vw;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(56, 56, 56);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Ajout de la transition d'opacité */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:not(:last-child) {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgb(90, 90, 90); /* Ajoute un trait en bas de chaque lien */
+    transition: border-bottom 0.3s ease-in-out; /* Ajoute une transition lisse */
+}
+  
+  .dropdown-content a:hover {background-color: #515151;}
+  
+.intro{
+  position: relative;
+  top: 100px;
+  text-align:center;
+}
+
+p {
+  color:white;
+  font-size: 20px;
+  font-family: Quicksand;
+}
+
+/* ----------------------- */
+
+
+/* responsive navigation bar: CSS */
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("navbar_name"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+
+  @media screen and (max-width:875px) {
+    .info p {
+        font-size: 2.5vw;
+    }
+  }
+
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+
+/* end of navgation bar styling - responsive */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid #dddddd20;*/
+    padding: 15px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.content a:not(:last-child) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dddddd20;
+    padding: 15px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(90, 90, 90); /* Ajoute un trait en bas de chaque lien */
+}
+
+
+.info {
+    flex: 1;
+    margin-left: 20px; /* Espace entre l'image et les informations */
+    font-family: sans-serif;
+}
+
+.info h2 {
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: sans-serif;
+    margin: 0px 0px 5px;
+}
+
+img {
+    max-width: 14vw;
+    margin-right: 11vw;
+    margin-left: 2vw;
+}
+
+    .commande {
+        color: bisque;
+        background-color: #2a2a61;
+        position: relative;
+        width: max-content;
+        padding: 6px;
+        border-radius: 7px;
+        border: 0.5px #ffffff29;
+    border-style: solid;
+            cursor: pointer;
+    }
+
+    span {
+        background: transparent;
+    }
+
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        color: aliceblue;
+    }
+    
+    /* Modal style */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: aliceblue;
+        background-color: #1d1e22;
+    }
+    .modal-content h2 {
+        margin-bottom: 4vw;
+        font-family: sans-serif;
+    }
+    .modal-content input {
+        padding: 0.5vw;
+        font-size: 1vw;
+        border-radius: 50vw;
+        border-style: none;
+        background-color: aliceblue;
+        border: #000756;
+        border-style: solid;
+        outline-color: aliceblue;
+        outline-style: solid;
+        outline-width: 2px;
+    }
+
+    #checkPassword {
+        color: aliceblue;
+        border-style: solid;
+        border-color: #00dcff;
+        background-color: transparent;
+        margin: 1vw;
+        font-size: 1.2vw;
+        border-radius: 12px;
+        border-spacing: 2px;
+        border-width: 2px;
+        background: transparent;
+        padding: 0.5vw;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+
+    #checkPassword:active {
+        background-color: #00dcff;
+        color: black;
+    }
+    
+    
+    body.popup-open {
+        overflow: hidden; /* Désactive le défilement sur le corps lorsque le popup est ouvert */
+    }

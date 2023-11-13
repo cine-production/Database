@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Wonder</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <h2>Entrez le mot de passe</h2>
+            <input type="password" id="passwordInput" placeholder="Votre MDP">
+            <button id="checkPassword">Vérifier</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <script src="/script.js"></script>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Element du pack</a>
+            <div class="dropdown-content">
+              <a href="/objets.html">Objet</a>
+              <a href="/son.html">Son</a>
+            </div>
+          </li>
+        <li><a href="/ban.html">Ban</a></li>
+        <li><a href="/objets.html">Datapack</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Employée</a>
+          <div class="dropdown-content">
+            <a href="#">CastMember</a>
+            <a href="#">Builder</a>
+            <a href="#">Imagineers</a>
+          </div>
+        </li>
+      </ul>
+        <script>
+            function navBarFunction() {
+    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+}
+
+        </script>
+        <!--         closing navbar  -->
+    
+    <h1 class="title">Documentation du serveur Wonder</h1>
+    <!-- <div class="container">
+        <div class="box">Création du site intranet</div>
+        <div class="box">Contenu 2</div>
+    </div>-->
+
+</body>
+</html>
