@@ -49,8 +49,9 @@ ul {
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     font-family: sans-serif;
-    text-align: center;
-  }
+    justify-content: center;
+    display: flex;
+}
   
   li {
     display: inline-block;
@@ -60,13 +61,16 @@ ul {
   }
   
   li a, .dropbtn {
-    display: inline-block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     margin-right: 2vw;
-  }
+    border-radius: 0.8vw;
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+}
   
   li a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(56, 56, 56);
@@ -188,9 +192,8 @@ p {
 }
 
 img {
-    max-width: 14vw;
-    margin-right: 11vw;
-    margin-left: 2vw;
+  max-width: 14vw;
+  max-height: 14vw;
 }
 
     .commande {
@@ -232,9 +235,12 @@ img {
         background-color: #1d1e22;
     }
     .modal-content h2 {
-        margin-bottom: 4vw;
-        font-family: sans-serif;
-    }
+      margin-bottom: 4vw;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      font-size: 1.8vw;
+  }
     .modal-content input {
         padding: 0.5vw;
         font-size: 1vw;
@@ -262,6 +268,7 @@ img {
         padding: 0.5vw;
         font-family: sans-serif;
         cursor: pointer;
+        margin-right: 0;
     }
 
     #checkPassword:active {
@@ -273,3 +280,188 @@ img {
     body.popup-open {
         overflow: hidden; /* Désactive le défilement sur le corps lorsque le popup est ouvert */
     }
+
+    .Type {
+      color: blueviolet;
+      display: flex;
+      justify-content: center;
+      border-top: blueviolet;
+      border-top-style: solid;
+      font-family: sans-serif;
+      padding: 0.5vw;
+      margin-top: 4vw;
+      font-size: 2vw;
+  }
+
+  .divImg {
+    width: 27vw;
+    height: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotation-container {
+  display: inline-block;
+  transform: rotate(90deg);
+  background: #a7000000;
+  margin-left: 0.4vw;
+}
+
+.hrbutton {
+  color: #00dcff;
+  display: flex;
+  justify-content: center;
+}
+.hrbutton button {
+  color: black;
+  display: inline-block;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  border-width: 0.7vw;
+  border-style: solid;
+  background-color: #00dcff;
+  border-color: transparent;
+  border-radius: 0.6vw;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  display: none;
+  background-color: #00dcff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6vw;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTopBtn.show {
+  display: block;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2vw;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: flex;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}
+
+
+.footer-content {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.footer-section {
+  color: #00dcff;
+
+}
+
+.footer-section p {
+  color: #8d8d8d;
+  font-family: sans-serif;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.vrsite {
+  color: #515151;
+  font-weight: 100;
+  font-size: 1vw;
+}
+
+.footer-sectionLinks {
+  color: #00dcff;
+}
+
+.footer-sectionLinks h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content .T-lienR {
+  color: #cecece;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.hrbuttonFoot {
+  color: #00dcff;
+  display: flex;
+  justify-content: center;
+}
+.hrbuttonFoot button {
+  color: black;
+  display: inline-block;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  border-width: 0.7vw;
+  border-style: solid;
+  background-color: #00dcff;
+  border-color: transparent;
+  border-radius: 0.6vw;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.BLR {
+  font-size: 1vw;
+}
+.footer-bottom p {
+  margin: 1vw;
+  color: #515151;
+  font-family: sans-serif;
+  font-size: 1vw;
+}
+footer {
+  border: #00dcff;
+  border-top-style: solid;
+}
+.imgID {
+  min-height: 16vw;
+  min-width: 16vw;
+}
+.divIDimg {
+  display: flex;
+  justify-content: center;
+}
+.constructionIMG {
+  position: absolute;
+  margin-left: 30vw;
+  z-index: 1;
+  background: #63636300;
+  width: 35vw;
+  height: 15vw;
+  margin-left: 28vw;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.imgEC {
+  background: transparent;
+  min-width: fit-content;
+  max-height: 7vw;
+  margin-top: 4vw;
+}
