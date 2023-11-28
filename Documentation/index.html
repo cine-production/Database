@@ -9,6 +9,9 @@
 <body>
     <div id="passwordModal" class="modal">
         <div class="modal-content">
+          <div class="divIDimg">
+            <img class="imgID" src="/img/Wonder ID.png" alt="My Wonder ID" >
+          </div>
             <h2>Entrez le mot de passe</h2>
             <input type="password" id="passwordInput" placeholder="Votre MDP">
             <button id="checkPassword">Vérifier</button>
@@ -21,7 +24,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="#news">News</a></li>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Element du pack</a>
+            <a href="javascript:void(0)" class="dropbtn">Element du pack<div class="rotation-container">&#x261B;</div></a>
             <div class="dropdown-content">
               <a href="objets.html">Objet</a>
               <a href="son.html">Son</a>
@@ -30,14 +33,47 @@
         <li><a href="ban.html">Ban</a></li>
         <li><a href="objets.html">Datapack</a></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Employée</a>
+          <a href="javascript:void(0)" class="dropbtn">Employée<div class="rotation-container">&#x261B;</div></a>
           <div class="dropdown-content">
             <a href="#">CastMember</a>
-            <a href="#">Builder</a>
+            <a href="/builder.html">Builder</a>
             <a href="#">Imagineers</a>
           </div>
         </li>
       </ul>
+
+
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <span class="material-symbols-outlined">
+            expand_less
+            </span>
+      </button>
+      <script>
+        // Fonction pour faire défiler la page jusqu'à une section
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Fonction pour faire défiler la page vers le haut
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Gestion de l'affichage du bouton de retour en haut avec un effet de fondu
+window.onscroll = function () {
+  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = 'block';
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+};
+
+      </script>
+
+
         <script>
             function navBarFunction() {
     document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
@@ -52,5 +88,33 @@
         <div class="box">Contenu 2</div>
     </div>-->
 
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section contact">
+              <h3 class="vrsite">Version du site : 2.3<br>Last update : 28/11/2023</h3>
+              <p>Adresse email : adm.cdiqney@gmail.com</p>
+              <p>Téléphone : [06.62.59.18.39]<br>(à utiliser seulement en cas de necessiter)</p>
+          </div>
+          <h3 class="T-lienR">Liens rapides</h3>
+          <div class="hrbuttonFoot">
+                  <button>FAQ</button>
+                  <button onclick="window.location.href='/index.html'">Home</button>
+                  <button>1</button>
+          </div>
+  
+          <!--<div class="footer-section social">
+              <h3>R</h3>
+              <ul>
+                  <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+          </div>-->
+      </div>
+  
+      <div class="footer-bottom">
+          <p>&copy; 2023 Wonder. Tous droits réservés.</p>
+      </div>
+  </footer>
 </body>
 </html>
