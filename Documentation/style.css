@@ -2,6 +2,10 @@
     font-family: 'MC'; /* Donnez un nom à votre police */
     src: url('font/minecraft-webfont.woff') format('truetype'); /* Indiquez le chemin vers votre fichier de police */
 }
+@font-face {
+  font-family: 'P2'; /* Donnez un nom à votre police */
+  src: url('font/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3jw.woff2') format('truetype'); /* Indiquez le chemin vers votre fichier de police */
+}
 
 * {
     background-color: #1e1f26;
@@ -464,4 +468,28 @@ footer {
   min-width: fit-content;
   max-height: 7vw;
   margin-top: 4vw;
+}
+.modal-content p {
+  color: #757575;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.8vw;
+}
+
+.EcranTP {
+  display: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: smaller;
+}
+
+
+@media screen and (max-width:675px) {
+  .EcranTP {
+      display: block;
+  }
+  .modal-content h2, #passwordInput, #checkPassword, .P1 {
+    display: none;
+  }
 }
