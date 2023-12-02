@@ -8,7 +8,7 @@
 }
 
 * {
-    background-color: #1e1f26;
+    background-color: #12161A;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@
     justify-content: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'P2', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vw;
 }
 
