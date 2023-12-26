@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPasswordButton.addEventListener('click', () => {
         const password = passwordInput.value;
 
-        if (password === 'Walt135' || password === 'Minecraft15!') {
+        if (password === 'Walt135' || password === 'Minecraft15!' || password === 'Wonder04572424') {
             // Enregistre que le mot de passe a été entré avec succès et le timestamp actuel
             localStorage.setItem('isPasswordEntered', 'true');
             localStorage.setItem('passwordTimestamp', new Date().getTime().toString());
