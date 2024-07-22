@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation | Wonder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="autrestyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="shortcut icon" href="img/logo wonder.png" type="image/x-icon">
 </head>
 <body>
-    <div id="passwordModal" class="modal">
-        <div class="modal-content">
+    <div id="passwordModalcust" class="modalcust">
+        <div class="modalcust-content">
           <div class="divIDimg">
             <img class="imgID" src="img/Wonder ID.png" alt="My Wonder ID" >
           </div>
@@ -57,38 +58,6 @@
             expand_less
             </span>
       </button>
-      <script>
-        // Fonction pour faire défiler la page jusqu'à une section
-function scrollToSection(sectionId) {
-  var section = document.getElementById(sectionId);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Fonction pour faire défiler la page vers le haut
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Gestion de l'affichage du bouton de retour en haut avec un effet de fondu
-window.onscroll = function () {
-  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = 'block';
-    scrollToTopBtn.classList.add('show');
-  } else {
-    scrollToTopBtn.classList.remove('show');
-  }
-};
-
-      </script>
-
-
-        <script>
-            function navBarFunction() {
-    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
-}
-
-        </script>
         <!--         closing navbar  -->
     
     <h1 class="title">Documentation du serveur Wonder</h1>
